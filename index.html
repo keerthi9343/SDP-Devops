@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the College Management System</h1>
+            <p>Manage students, courses, and more!</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('get_students') }}">Manage Students</a></li>
+                <li><a href="#">Manage Courses</a></li>
+                <li><a href="#">View Reports</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
